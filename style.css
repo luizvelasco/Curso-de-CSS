@@ -115,10 +115,43 @@ body{
     /* margin: 50px;
     margin: 5px 10px 10px 7px; */
     margin: 20px 10px;
+    display: block;
 }
 
 .paragrafo-box{
     color: black;
     margin: 0;
     
+}
+
+/* POSITIONS */
+/*static*/
+/*relative*/
+/*fixed*/
+/*absolute*/
+/*sticky*/
+
+.div-position {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border-bottom: 2px solid;
+}
+
+.static {
+    position: static;
+}
+
+.relative {
+    position: relative;
+    background-color: blue;
+    top: 100px;
+    left: 50px;
+}
+
+.absolute {
+    position: absolute;
+    background-color: purple;
+    right: 0;
+    top: 0;
 }
