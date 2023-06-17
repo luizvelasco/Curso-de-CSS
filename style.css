@@ -125,11 +125,11 @@ body{
 }
 
 /* POSITIONS */
-/*static*/
-/*relative*/
-/*fixed*/
-/*absolute*/
-/*sticky*/
+/*static - flow do html, não é alterado por top, left, right e bottom*/
+/*relative - flow no html, ela é alterada pelo top, left, right e bottom*/
+/*fixed - posiciona em qualquer lugar da tela, e é posicionada em relação ao HTML*/
+/*absolute - posiciona em qualquer lugar, e ela respeita o elemento antecessor*/
+/*sticky - está no flow do HTML, porém ao passar o scroll ela funciona como fixed*/
 
 .div-position {
     width: 500px;
@@ -153,5 +153,26 @@ body{
     position: absolute;
     background-color: purple;
     right: 0;
+    top: 0;
+}
+
+.mini-div {
+    height: 50px;
+    width: 50px;
+    top: 50px;
+    left: 100px;
+}
+
+.fixed {
+    position: fixed;
+    height: 200px;
+    background-color: yellow;
+    bottom: 0;
+    right: 0;
+}
+
+.sticky{
+    position: sticky;
+    background-color: gray;
     top: 0;
 }
